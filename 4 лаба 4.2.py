@@ -1,9 +1,11 @@
-def divide():
+def divide_numbers():
     try:
-        num = float(input("Введите число: "))
-        result = 100 / num
+        number = float(input("Введите число, на которое нужно разделить 100: "))
+        result = 100 / number
         print(f"Результат деления: {result}")
     except ValueError:
-        print("Ошибка: введено некорректное значение. Пожалуйста, введите число.")
+        print("Вы ввели не число")
     except ZeroDivisionError:
-        print("Ошибка: нельзя делить на 0. Пожалуйста, введите другое число.")
+        print("Вы ввели 0")
+    
+divide_numbers()
